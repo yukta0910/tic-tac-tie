@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Itim', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+main.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Title Section */
+.title h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+/* Display Section */
+.display {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.display-player {
+    font-weight: bold;
+}
+
+.playerX {
+    color: #ff6f61;
+}
+
+.playerO {
+    color: #6fcf97;
+}
+
+/* Tile Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tile:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+/* Announcer Section */
+.announcer {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hide {
+    display: none;
+}
+
+/* Controls Section */
+.controls button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.controls button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #2f80ed, #56ccf2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
